@@ -1,1 +1,1 @@
-# kurs1
+# Birinci secilecek
