@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,59 +11,118 @@ namespace kurs1
     {
         static void Main(string[] args)
         {
-             void Task1()
+            //if-else tasklari 
+            // tasklari ise salmaq ucun en asagidaki setirde hansi taskin isledileceyini secin: Task2_(reqem)
+
+
+            void Task2_1()
             {
-                Console.Write("birinci reqem: ");
-                int a=Convert.ToInt32(Console.ReadLine());
-                Console.Write("ikinci reqem: ");
-                int b=Convert.ToInt32(Console.ReadLine());
-                if (a % 2 == 1 && b % 2 == 1)
+                int a, b, c;
+                a = Convert.ToInt32(Console.ReadLine());
+                b = Convert.ToInt32(Console.ReadLine());
+                c = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine();
+
+                Console.WriteLine($"eded a:{a}\neded b:{b}\neded c:{c}");
+                Console.WriteLine();
+
+                if (a < 1000 && b < 1000 && c < 1000)
                 {
-                    Console.WriteLine("Her iki eded tekdir");
+                    Console.WriteLine("Ededlerin ededi ortasi: " + (a + b + c) / 3);
                 }
-                else if (a % 2 == 0 && b % 2 == 0)
+                else
                 {
-                    Console.WriteLine("her iki eded cutdur");
+                    Console.WriteLine("1000-e qeder olan ededleri daxil edin");
                 }
-                else 
+            }
+
+            void Task2_2()
+            {
+                int terefA, terefB, terefC;
+
+                terefA = Convert.ToInt32(Console.ReadLine()); //3
+                terefB = Convert.ToInt32(Console.ReadLine()); //4
+                terefC = Convert.ToInt32(Console.ReadLine()); //3
+
+                if (terefA < 100 && terefB < 100 && terefC < 100)
                 {
-                    Console.Write("Her iki eded cut ve ya tekdir: ");
-                    Console.WriteLine(false);
+                    if (terefA == terefB && terefA == terefC)
+                    {
+                        Console.WriteLine("\n1");
+                    }
+                    else if (terefA == terefB && terefA != terefC || terefB == terefC && terefB != terefA || terefA == terefC && terefA != terefB)
+                    {
+                        Console.WriteLine("\n2");
+                    }
+                    else
+                    {
+                        Console.WriteLine("\n3");
+                    }
                 }
 
             }
 
-            void Task2() 
+            void Task2_3()
             {
-                Console.Write("birinci sozu daxil edin: ");
-                 string soz1 = Console.ReadLine();
-                Console.Write("sozun icinde axtarmaq istediyiniz hisse: ");
-                 string soz2 = Console.ReadLine();
+                int a, b, c;
 
-                if (soz1.Contains(soz2))
+                a = Convert.ToInt32(Console.ReadLine()); //3
+                b = Convert.ToInt32(Console.ReadLine()); //4
+                c = Convert.ToInt32(Console.ReadLine()); //3
+
+                if ((a < 100) && (b < 100) && (c < 100))
                 {
-                    Console.WriteLine(true);
-                }
-                else 
-                {
-                    Console.WriteLine(false);
+                    if ((Math.Sqrt(a * a + b * b) == c) || (Math.Sqrt(b * b + c * c) == a) || (Math.Sqrt(a * a + c * c) == b))
+                    {
+                        Console.WriteLine("Duzbucaqlidir");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Duzbucaqli deyil !!");
+                    }
                 }
             }
 
-            void Task3() 
+            void Task2_4()
             {
-                Console.Write("birinci reqem: ");
+                Console.Write("Ayin gununu daxil edin: ");
                 int a = Convert.ToInt32(Console.ReadLine());
-                Console.Write("ikinci reqem: ");
-                int b = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Netice: ");
-               double c = (double)a / b;
-                Console.WriteLine(c);
+                if (a > 0 && a <= 12)
+                {
+                    if (a == 12 || a == 1 || a == 2)
+                    {
+                        Console.WriteLine("Winter");
+                    }
+                    else if (a == 3 || a == 4 || a == 5)
+                    {
+                        Console.WriteLine("Spring");
+                    }
+                    else if (a == 6 || a == 7 || a == 8)
+                    {
+                        Console.WriteLine("Summer");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Autmn");
+                    }
+
+                }
+                else 
+                {
+                    Console.WriteLine("Duzgun eded daxil edin(1-12 arasi eded olmalidir) ");
+                }
             }
 
-            //isledilecek task-i secin
-            Task1();
 
+            //ise salinacaq task
+            
+            Task2_4();
+
+
+
+            
+
+            
 
         }
     }
