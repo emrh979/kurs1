@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net.Configuration;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -113,16 +115,58 @@ namespace kurs1
                 }
             }
 
+            void Task() 
+            {
 
-            //ise salinacaq task
-            
-            Task2_4();
+                if (int.TryParse(Console.ReadLine(), out int a))
+                {
+                    int ay = a;
+                    switch (ay) 
+                    {
+                        case 12:
+                            case 1:
+                             case 2:
+                            Console.WriteLine("Winter");
+                            break;
+                        case 3:
+                            case 4:
+                             case 5:
+                            Console.WriteLine("Spring");
+                            break;
+                            case 6:
+                                case 7:
+                                    case 8:
+                                        Console.WriteLine("Summer");
+                            break;
+                            case 9:
+                                case 10:
+                                    case 11:
+                                        Console.WriteLine("Autmn");
+                            break;
+
+                        default:
+                            Console.WriteLine("duzgun daxil et");
+                            break ;
 
 
 
-            
 
-            
+
+                    }
+
+                }
+
+                else 
+                {
+                    Console.WriteLine("Reqemlerden istifade edin");
+                }
+
+                
+
+            }
+
+            Task();
+
 
         }
     }
