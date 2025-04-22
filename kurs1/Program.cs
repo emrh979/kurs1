@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net.Configuration;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -113,16 +115,48 @@ namespace kurs1
                 }
             }
 
+            void Task() 
+            {
+                Console.WriteLine("Ededleri daxil edin\n|\n|\n|\nv ");
+                
+                if (int.TryParse(Console.ReadLine(), out int a) && int.TryParse(Console.ReadLine(),out int b))
+                {
+                    int reqem1 = a;
+                    int reqem2 = b;
+                    Console.Write("emeliyyati gosterin: ");
+                    string emeliyyat = Console.ReadLine();
+                    switch (emeliyyat) 
+                    {
+                        case "+":
+                            Console.WriteLine(reqem1 + reqem2);
+                            break;
+                        case "-":
+                            Console.WriteLine(reqem1 - reqem2);
+                            break ;
+                        case "*":
+                            Console.WriteLine(reqem1 * reqem2);
+                            break ;
+                        case "/":
+                            Console.WriteLine(reqem1 / reqem2);
+                            break ;
+                        default:
+                            Console.WriteLine("Duzgun emeliyyati qeyd edin");
+                            break ;
+                    }
 
-            //ise salinacaq task
-            
-            Task2_4();
+                }
 
+                else 
+                {
+                    Console.WriteLine("Reqemlerden istifade edin");
+                }
 
+                
 
-            
+            }
 
-            
+            Task();
+
 
         }
     }
