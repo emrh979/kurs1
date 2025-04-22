@@ -151,10 +151,14 @@ namespace kurs1
                     Console.WriteLine("Reqemlerden istifade edin");
                 }
 
+             
                 
 
-            }
 
+
+
+
+            }
             Task();
 
 
