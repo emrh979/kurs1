@@ -115,34 +115,58 @@ namespace kurs1
                 }
             }
 
-                else 
+            void Task3_3()
+            {
+                Console.Write("Ededi daxil edin: ");
+                int a = Convert.ToInt32(Console.ReadLine());
+                switch (a) 
                 {
-                    Console.WriteLine("Reqemlerden istifade edin");
+                    case 0: 
+                        Console.WriteLine("sifir");
+                        break;
+                    case 1: Console.WriteLine("bir");
+                        break;
+                    case 2: Console.WriteLine("iki");
+                        break;
+                    case 3: Console.WriteLine("uc");
+                        break;
+                    case 4: Console.WriteLine("dord");
+                        break;
+                    case 5: Console.WriteLine("bes");
+                        break;
+                    case 6: Console.WriteLine("alti");
+                        break;
+                    case 7: Console.WriteLine("yeddi");
+                        break;
+                    case 8: Console.WriteLine("sekkiz");
+                        break;
+                    case 9: Console.WriteLine("doqquz");
+                        break;
+                    default: Console.WriteLine("0-9 arasi eded daxil edin");
+                           break ;
                 }
-
-             
-
-
-
-
-
-
-
-
-
-
-
-
-                else 
-                {
-                    Console.WriteLine("Reqemlerden istifade edin");
-                }
-
-
-
 
             }
-            Task();
+
+            void Task3_5() //imtahan qiymetlendirme
+            {
+                string a = Console.ReadLine();
+                switch (a) 
+                {
+                    case "A": Console.WriteLine("Ela");
+                        break;
+                    case "B": Console.WriteLine("Yaxsi");
+                        break;
+                    case "C": Console.WriteLine("Orta");
+                        break;
+                    case "D": Console.WriteLine("Kafi");
+                        break;
+                    case "E": Console.WriteLine("Pis");
+                        break;
+                }
+
+            }
+
 
 
         }
