@@ -163,6 +163,8 @@ namespace kurs1
                         break;
                     case "E": Console.WriteLine("Pis");
                         break;
+                    default : Console.WriteLine("A-F arasi qiymet daxil edin!!!");
+                        break;
                 }
 
             }
