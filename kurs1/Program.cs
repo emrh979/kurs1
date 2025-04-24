@@ -168,7 +168,63 @@ namespace kurs1
                 }
 
             }
+            //daxil edilen 1 eded ikilik koddaki yazilisini goster
+            /*Console.Write("Ededi daxil edin: ");
+            int n = Convert.ToInt32(Console.ReadLine());
+            string ikilikKod = "";
+            // 13%2 = 1
+            while (n != 0) 
+            {
+               
+               ikilikKod= Convert.ToString(n%2) + ikilikKod;
+                
+                n = n / 2;
+            }
+            Console.Write("Ededin ikilik kodu: ");
+            Console.WriteLine(ikilikKod);
+            int say = 0;
+            for (int i = 0; i < ikilikKod.Length; i++) 
+            {
+                if(ikilikKod[i] == '1') 
+                {
+                    say++;
+                }
+            }
+            Console.WriteLine($"Ikilik koddaki 1-lerin sayi: {say}"); */
 
+            //movcud olan bir kodu istifadeciden password istenilecek duz olana qeder kodu daxil etmeyimi isteyen kod
+
+                /*string mypassword = "emrahmelik2006";
+                while (true) 
+              {
+                Console.Write("Sifreni daxil edin:");
+                string password = Console.ReadLine();
+                if (password == mypassword)
+                {
+                    Console.WriteLine("Sisteme daxil olundu");
+                    break;
+                }
+                else { Console.WriteLine("Duzgun sifreni daxil edin"); }
+              }*/
+            
+
+
+            string mypassword = "emrahmelik2006";
+            do 
+            {
+                Console.Write("Sifreni daxil edin:");
+                string password = Console.ReadLine();
+                if (password == mypassword)
+                {
+                    Console.WriteLine("Sisteme daxil olundu");
+                    break;
+                }
+                else { Console.WriteLine("Duzgun sifreni daxil edin"); }
+
+            }
+            while (true);
+            
+            
 
 
         }
