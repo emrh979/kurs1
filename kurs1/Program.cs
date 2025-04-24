@@ -194,22 +194,22 @@ namespace kurs1
 
             //movcud olan bir kodu istifadeciden password istenilecek duz olana qeder kodu daxil etmeyimi isteyen kod
 
-                /*string mypassword = "emrahmelik2006";
-                while (true) 
-              {
-                Console.Write("Sifreni daxil edin:");
-                string password = Console.ReadLine();
-                if (password == mypassword)
-                {
-                    Console.WriteLine("Sisteme daxil olundu");
-                    break;
-                }
-                else { Console.WriteLine("Duzgun sifreni daxil edin"); }
-              }*/
-            
+            /*string mypassword = "emrahmelik2006";
+            while (true) 
+          {
+            Console.Write("Sifreni daxil edin:");
+            string password = Console.ReadLine();
+            if (password == mypassword)
+            {
+                Console.WriteLine("Sisteme daxil olundu");
+                break;
+            }
+            else { Console.WriteLine("Duzgun sifreni daxil edin"); }
+          }*/
 
 
-            string mypassword = "emrahmelik2006";
+
+            /*string mypassword = "emrahmelik2006";
             do 
             {
                 Console.Write("Sifreni daxil edin:");
@@ -222,9 +222,26 @@ namespace kurs1
                 else { Console.WriteLine("Duzgun sifreni daxil edin"); }
 
             }
-            while (true);
-            
-            
+            while (true);*/
+
+            //faktorialin tapilmasi
+            /*Console.Write("Ededi daxil edin: ");
+            int eded = Convert.ToInt32(Console.ReadLine());
+            int fact = 1;
+            for (int i = 1; i <= eded; i++) 
+            {
+                fact = fact * i;
+            }
+            Console.WriteLine($"Ededin faktoriali: {fact}");*/
+            int fact = 1;
+            int i = 1;
+            int eded = Convert.ToInt32(Console.ReadLine());
+            while (i <= eded) 
+            {
+                fact = fact * i;
+                i++;
+            }
+            Console.WriteLine($"Ededin faktoriali: {fact}");
 
 
         }
